@@ -1,0 +1,6 @@
+Flask==3.0.3
+flask-pymongo==2.3.0
+pymongo==4.8.0
+elasticsearch==8.15.1
+gunicorn==23.0.0
+pytest==8.3.3

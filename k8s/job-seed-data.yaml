@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: seed-data
+  namespace: inventory-system
+spec:
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: seed-data
+          image: inventory-api:latest
+          imagePullPolicy: Never
+          command: ["python", "scripts/seed_data.py"]
+          envFrom:
+            - configMapRef:
+                name: inventory-config

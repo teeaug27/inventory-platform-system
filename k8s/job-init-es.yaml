@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: init-es-index
+  namespace: inventory-system
+spec:
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: init-es-index
+          image: inventory-api:latest
+          imagePullPolicy: Never
+          command: ["python", "scripts/init_es_index.py"]
+          envFrom:
+            - configMapRef:
+                name: inventory-config

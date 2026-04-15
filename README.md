@@ -1,8 +1,8 @@
 # Inventory Management System with Product Analytics and Search
 
-This project implements the assignment requirements using Flask, MongoDB, Elasticsearch, Docker, and Kubernetes. MongoDB is the system of record for product data, while Elasticsearch is used as the search engine for fast full-text search over product descriptions.
+This project implements the requirements using Flask, MongoDB, Elasticsearch, Docker, and Kubernetes. MongoDB is the system of record for product data, while Elasticsearch is used as the search engine for fast full-text search over product descriptions.
 
-This solution covers the assignment requirements from the uploaded brief: CRUD product APIs, full-text search on descriptions, aggregated analytics, Dockerized deployment, Kubernetes manifests for Minikube, sample data, and documentation explaining the structure and run flow. fileciteturn0file0
+This solution covers the requirements,  CRUD product APIs, full-text search on descriptions, aggregated analytics, Dockerized deployment, Kubernetes manifests for Minikube, sample data, and documentation explaining the structure and run flow. fileciteturn0file0
 
 - MongoDB remains the source of truth and Elasticsearch is treated as a search index.
 - Search indexing failures do not block writes to the operational database.

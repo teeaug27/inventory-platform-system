@@ -4,10 +4,6 @@ This project implements the assignment requirements using Flask, MongoDB, Elasti
 
 This solution covers the assignment requirements from the uploaded brief: CRUD product APIs, full-text search on descriptions, aggregated analytics, Dockerized deployment, Kubernetes manifests for Minikube, sample data, and documentation explaining the structure and run flow. fileciteturn0file0
 
-## Why this version is stronger
-
-This submission is designed to show production-minded engineering choices rather than only assignment completion:
-
 - MongoDB remains the source of truth and Elasticsearch is treated as a search index.
 - Search indexing failures do not block writes to the operational database.
 - Readiness and liveness endpoints support Kubernetes health checks.
